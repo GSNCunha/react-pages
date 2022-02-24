@@ -1,12 +1,4 @@
 {
-  "files": {
-    "main.css": "/react-pages/static/css/main.31d6cfe0.css",
-    "main.js": "/react-pages/static/js/main.227a4b11.js",
-    "index.html": "/react-pages/index.html",
-    "main.227a4b11.js.map": "/react-pages/static/js/main.227a4b11.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.227a4b11.js"
-  ]
+  "main.js": "static/js/main.16780dc7.js",
+  "main.js.map": "static/js/main.16780dc7.js.map"
 }
