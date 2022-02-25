@@ -19,10 +19,6 @@ class Header extends Component {
 
     if(this.props.data){
 
-      var name = this.props.data.name;
-      var occupation= this.props.data.occupation;
-      var description= this.props.data.description;
-      var city= this.props.data.address.city;
       var networks = this.props.data.social.map(function (network, i) {
          
          return (
@@ -54,11 +50,22 @@ class Header extends Component {
 
       <div className="row banner">
          <div className="banner-text">
-            <h1 className="responsive-headline">I'm a {name}.</h1>
-            <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3>
+            <h1 className="responsive-headline">I'm Gabriel Sadigursky.</h1>
+            <h3>I'm a North bay Village based <span>Web Developer</span>. Growed up in a programming and robotics environment, in 2020 I decided to jump into Web Dev, I learned several languages and mainly to find solutions..</h3>
             <hr />
             <ul className="social">
-               {networks}
+               <li key="linkedin">
+                  <a href="https://www.linkedin.com/in/gabriel-sadigursky/"><FontAwesomeIcon icon={faLinkedin} /></a>
+               </li>
+               <li key="instagram">
+                  <a href="https://www.instagram.com/gsncunha/"><FontAwesomeIcon icon={faInstagram} /></a>
+               </li>
+               <li key="github">
+                  <a href="https://github.com/GSNCunha"><FontAwesomeIcon icon={faGithub} /></a>
+               </li>
+               <li key="reddit">
+                  <a href="https://www.reddit.com/user/sadigursky"><FontAwesomeIcon icon={faReddit} /></a>
+               </li>
             </ul>
          </div>
       </div>
