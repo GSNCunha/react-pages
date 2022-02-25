@@ -99,17 +99,17 @@ class Contact extends Component {
                            <span>
                               This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                               Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                              <a href="#">http://post</a>
+                              link
                            </span>
-                           <b><a href="#">2 Days Ago</a></b>
+                           
                         </li>
                         <li>
                            <span>
                               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
                               eaque ipsa quae ab illo inventore veritatis et quasi
-                              <a href="#">http://otherPost</a>
+                              link
                            </span>
-                           <b><a href="#">3 Days Ago</a></b>
+                          
                         </li>
                      </ul>
                   </div>
