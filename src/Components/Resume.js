@@ -3,25 +3,6 @@ import React, { Component } from 'react';
 class Resume extends Component {
   render() {
 
-    if(this.props.data){
-
-      var work = this.props.data.work.map(function(work){
-        return <div key={work.company}><h3>{work.company}</h3>
-            <p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em></p>
-            <p>{work.description}</p>
-        </div>
-      })
-      var skills = this.props.data.skills.map(function(skills){
-        var className = 'bar-expand '+skills.name.toLowerCase();
-        return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
-      })
-      var languages = this.props.data.languages.map(function(languages){
-        var className = 'bar-expand '+languages.name.toLowerCase();
-        return <li key={languages.name}><span style={{width:languages.level}}className={className}></span><em>{languages.name}</em></li>
-      })
-      
-    }
-
     return (
 
       
@@ -35,7 +16,7 @@ class Resume extends Component {
 
         <div className="nine columns main-col">
 
-          <p>"Languages I can code"
+          <p>Languages I can code
           </p>
 
         <div className="bars">
@@ -64,14 +45,14 @@ class Resume extends Component {
             <div className="row item">
                <div className="twelve columns">
                   <div key="Control and Automation Engineering at UFGRS">
-                    <h3>"Control and Automation Engineering at UFGRS"</h3>
-                      <p className="info">"bachelor degree"<span>&bull;</span><em className="date">"June 2025"</em></p>
-                      <p>"Learn time management and soft skills"</p>
+                    <h3>Control and Automation Engineering at UFGRS</h3>
+                      <p className="info">bachelor degree<span>&bull;</span><em className="date">June 2025</em></p>
+                      <p>Learn time management and soft skills</p>
                     </div>
                     <div key="Sinodal">
-                    <h3>"Sinodal"</h3>
-                      <p className="info">"Robotics and Entrepreneurship"<span>&bull;</span><em className="date">"December 2019"</em></p>
-                      <p>"learn programming logic, teamwork, Entrepreneurship and persistence"</p>
+                    <h3>Sinodal</h3>
+                      <p className="info">Robotics and Entrepreneurship<span>&bull;</span><em className="date">December 2019</em></p>
+                      <p>learn programming logic, teamwork, Entrepreneurship and persistence</p>
                     </div>
                </div>
             </div>
@@ -86,9 +67,9 @@ class Resume extends Component {
          </div>
 
          <div className="nine columns main-col">
-          <div key="junior company"><h3>"junior company"</h3>
-              <p className="info">"advisor and consultant"<span>&bull;</span> <em className="date">"jun 2021 - jan 2022"</em></p>
-              <p>"I worked advisoring the administration and finance, and beeing a SDR"</p>
+          <div key="junior company"><h3>junior company</h3>
+              <p className="info">advisor and consultant<span>&bull;</span> <em className="date">jun 2021 - jan 2022</em></p>
+              <p>I worked advisoring the administration and finance, and beeing a SDR</p>
           </div>
         </div>
     </div>
@@ -101,7 +82,7 @@ class Resume extends Component {
 
       <div className="nine columns main-col">
 
-        <p>"Languages I can Speak"
+        <p>Languages I can Speak
         </p>
 
       <div className="bars">

@@ -25,7 +25,18 @@ class Testimonials extends Component {
 
             <div className="ten columns flex-container">
                   <ul className="slides">
-                      {testimonials}
+                     <li key="Kareem Abdul Jabbar">
+                        <blockquote>
+                           <p>Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.</p>
+                           <cite>Kareem Abdul Jabbar</cite>
+                        </blockquote>
+                     </li>
+                     <li key="Steve Wozniak... impersonator">
+                        <blockquote>
+                           <p>That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!</p>
+                           <cite>Steve Wozniak... impersonator</cite>
+                        </blockquote>
+                     </li>
                   </ul>
                </div>
             </div>
