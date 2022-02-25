@@ -1,11 +1,10 @@
 {
-  "main.js": "/react-pages/static/js/main.0eed0198.chunk.js",
-  "main.js.map": "/react-pages/static/js/main.0eed0198.chunk.js.map",
-  "static/js/1.516859b0.chunk.js": "/react-pages/static/js/1.516859b0.chunk.js",
-  "static/js/1.516859b0.chunk.js.map": "/react-pages/static/js/1.516859b0.chunk.js.map",
-  "runtime~main.js": "/react-pages/static/js/runtime~main.c9847d06.js",
-  "runtime~main.js.map": "/react-pages/static/js/runtime~main.c9847d06.js.map",
-  "index.html": "/react-pages/index.html",
-  "precache-manifest.ba78fe5c984f3835703c14f0e89fb8b4.js": "/react-pages/precache-manifest.ba78fe5c984f3835703c14f0e89fb8b4.js",
-  "service-worker.js": "/react-pages/service-worker.js"
+  "files": {
+    "main.js": "/react-pages/static/js/main.24fbbd62.js",
+    "index.html": "/react-pages/index.html",
+    "main.24fbbd62.js.map": "/react-pages/static/js/main.24fbbd62.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.24fbbd62.js"
+  ]
 }
