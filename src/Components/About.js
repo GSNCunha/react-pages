@@ -20,22 +20,22 @@ class About extends Component {
       <section id="about">
       <div className="row">
          <div className="three columns">
-            <img className="profile-pic"  src={profilepic} alt="Tim Baker Profile Pic" />
+            <img className="profile-pic"  src="images/profilepic.jpg" alt="gabriel Sadigursky Pic" />
          </div>
          <div className="nine columns main-col">
             <h2>About Me</h2>
 
-            <p>{bio}</p>
+            <p>Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.</p>
             <div className="row">
                <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
-						   <span>{name}</span><br />
+						   <span>Gabriel sadigursky</span><br />
 						   <span>
-						         {city}, {state}.
+                     North bay Village, Florida.
                    </span><br />
-						   <span>{phone}</span><br />
-                     <span>{email}</span>
+						   <span>55 51 997600101</span><br />
+                     <span>Gabriel.sadigursky@gmail.com</span>
 					   </p>
                </div>
                <div className="columns download">

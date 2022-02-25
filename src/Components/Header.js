@@ -10,25 +10,6 @@ import {
 class Header extends Component {
   render() {
 
-   var socialnetworks = [
-      <FontAwesomeIcon icon={faLinkedin} />,
-      <FontAwesomeIcon icon={faInstagram} />,
-      <FontAwesomeIcon icon={faGithub} />,
-      <FontAwesomeIcon icon={faReddit} />,
-    ];
-
-    if(this.props.data){
-
-      var networks = this.props.data.social.map(function (network, i) {
-         
-         return (
-           <li key={network.name}>
-             <a href={network.url}>{socialnetworks[i]}</a>
-           </li>
-         );
-       });
-    }
-
     return (
       <header id="home">
 
