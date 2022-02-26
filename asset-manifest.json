@@ -1,10 +1,11 @@
 {
-  "files": {
-    "main.js": "/react-pages/static/js/main.24fbbd62.js",
-    "index.html": "/react-pages/index.html",
-    "main.24fbbd62.js.map": "/react-pages/static/js/main.24fbbd62.js.map"
-  },
-  "entrypoints": [
-    "static/js/main.24fbbd62.js"
-  ]
+  "main.js": "/react-pages/static/js/main.8da48ef9.chunk.js",
+  "main.js.map": "/react-pages/static/js/main.8da48ef9.chunk.js.map",
+  "static/js/1.d74c4476.chunk.js": "/react-pages/static/js/1.d74c4476.chunk.js",
+  "static/js/1.d74c4476.chunk.js.map": "/react-pages/static/js/1.d74c4476.chunk.js.map",
+  "runtime~main.js": "/react-pages/static/js/runtime~main.c9847d06.js",
+  "runtime~main.js.map": "/react-pages/static/js/runtime~main.c9847d06.js.map",
+  "index.html": "/react-pages/index.html",
+  "precache-manifest.8ca6836e30fa918a604b24bb2ec4bc2f.js": "/react-pages/precache-manifest.8ca6836e30fa918a604b24bb2ec4bc2f.js",
+  "service-worker.js": "/react-pages/service-worker.js"
 }
