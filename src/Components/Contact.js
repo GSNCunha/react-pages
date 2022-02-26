@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import emailjs from "emailjs-com";
+import { useForm, ValidationError } from '@formspree/react';
 
 
 
 
 class Contact extends Component {
    render() {
+
 
       function sendEmail(e) {
          e.preventDefault();
@@ -41,38 +43,29 @@ class Contact extends Component {
             <div className="row">
                <div className="eight columns">
 
-               <form onSubmit={sendEmail}>
-                  <fieldset>
-                     <div className="row pt-5 mx-auto">
-                        <div>
-                           <label htmlFor="contactName">Name <span className="required">*</span></label>
-                           <input type="text" defaultValue="" size="35" id="contactName" placeholder="Name" name="name" onChange={this.handleChange}/>
+               <div>
+            <div className="container">
+            <form onSubmit={sendEmail}>
+                    <div className="row pt-5 mx-auto">
+                        <div className="col-8 form-group mx-auto">
+                            <input type="text" className="form-control" placeholder="Name" name="name"/>
                         </div>
-
-                        <div>
-                           <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                           <input type="email" defaultValue="" size="35" id="contactEmail" placeholder="Email Address" name="email" onChange={this.handleChange}/>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <input type="email" className="form-control" placeholder="Email Address" name="email"/>
                         </div>
-
-                        <div>
-                           <label htmlFor="contactSubject">Subject</label>
-                           <input type="text" defaultValue="" size="35" id="contactSubject" placeholder="Subject" name="subject" onChange={this.handleChange}/>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <input type="text" className="form-control" placeholder="Subject" name="subject"/>
                         </div>
-
-                        <div>
-                           <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                           <textarea cols="50" defaultValue="Let me hire you!" rows="15" id="contactMessage" placeholder="Your message" name="message"></textarea>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
                         </div>
-
-                        <div>
-                           <button className="submit">Submit</button>
-                           <span id="image-loader">
-                              <img alt="" src="images/loader.gif" />
-                           </span>
+                        <div className="col-8 pt-3 mx-auto">
+                            <input type="submit" className="btn btn-info" value="Send Message"></input>
                         </div>
-                     </div>
-                  </fieldset>
-				   </form>
+                    </div>
+                </form>
+            </div>
+        </div>
 
                   <div id="message-warning"> Error </div>
                   <div id="message-success">
