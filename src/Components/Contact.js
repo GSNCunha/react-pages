@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 import emailjs from "emailjs-com";
+import { withSnackbar } from 'react-simple-snackbar'
 
 
-
-
-class Contact extends Component {
+class Contact extends React.Component {
    render() {
+
+      const { openSnackbar} = this.props
+
 
       function sendEmail(e) {
          e.preventDefault();
  
      emailjs.sendForm('gmail', 'template_bc48enl', e.target, 'user_GTlxptiKDu3LQHwm9LrrO')
          .then((result) => {
-             console.log(result.text);
+            alert("Mensage sent");
          }, (error) => {
-             console.log(error.text);
+            alert("Error");
          });
          e.target.reset()
      }
@@ -51,7 +53,7 @@ class Contact extends Component {
 
                         <div>
                            <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                           <input type="email" defaultValue="" size="35" id="contactEmail" placeholder="Email Address" name="email" onChange={this.handleChange}/>
+                           <input type="email" defaultValue="" size="35" id="contactEmail" placeholder="Email" name="email" onChange={this.handleChange}/>
                         </div>
 
                         <div>
@@ -61,14 +63,11 @@ class Contact extends Component {
 
                         <div>
                            <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                           <textarea cols="50" defaultValue="Let me hire you" rows="15" id="contactMessage" placeholder="Your message" name="message"></textarea>
+                           <textarea cols="50" defaultValue="Let me hire you!" rows="15" id="contactMessage" placeholder="Your message" name="message"></textarea>
                         </div>
 
                         <div>
                            <button className="submit">Submit</button>
-                           <span id="image-loader">
-                              <img alt="" src="images/loader.gif" />
-                           </span>
                         </div>
                      </div>
                   </fieldset>
@@ -120,4 +119,4 @@ class Contact extends Component {
    }
 }
 
-export default Contact;
+export default withSnackbar(Contact);
